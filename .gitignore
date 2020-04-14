@@ -1,0 +1,50 @@
+[Tt]emp/
+[Oo]bj/
+[Bb]uild
+[Ll]ibrary/
+[Ll]ogs/
+[Aa]ssetBundles/
+[Ss]creenshots/
+[Ll]fs/
+[Hh]ooks
+sysinfo.txt
+*.stackdump
+[Ee]xported[Oo]bj/
+.vs/
+/*.userprefs
+/*.csproj
+/*.pidb
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+/*.gd
+.gd
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+#Icon?
+ehthumbs.db
+[Tt]humbs.db
+*.gd
+*.gd.meta
+Photon Unity Networking
+*.orig
+Assets/Models/Weapons/01 PISTOL/01 PHYS/weap_pistol_phys_01_MESH.fbm.meta
+Assets/Models/Weapons/01 PISTOL/02 ENERG/Weap_pistol_energ_02_MESH.fbm.meta
+Assets/Models/Weapons/02 PISTOL_AUT/01 PHYS/Weap_pistol_aut_phys_01_MESH.fbm.meta
+Assets/Models/Weapons/02 PISTOL_AUT/02 ENERG/Weap_pistol_aut_energ_02_MESH.fbm.meta
+Assets/Models/Weapons/03 WINCH/01 PHYS/Weap_winch_phys_01_MESH.fbm.meta
+Assets/Models/Weapons/03 WINCH/02 ENERGO/Weap_winch_energo_02_MESH.fbm.meta
+Assets/Models/Weapons/04 AUTOMAT/01 PHYS/Weap_automat_phys_01_MESH 1.fbm.meta
+Assets/Models/Weapons/04 AUTOMAT/02 ENERGO/Weap_automat_energ_02_MESH.fbm.meta
+Assets/Models/Weapons/05 SNIPER/01 PHYS/Weap_sniper_phys_01_MESH.fbm.meta
+Assets/Models/Weapons/05 SNIPER/02 ENERG/Weap_sniper_energo_02_MESH.fbm.meta
+Assets/Models/Weapons/06 MASHINGUN/01 PHYS/Weap_machinegun_phys_01_MESH.fbm.meta
+Assets/Models/Weapons/06 MASHINGUN/02 ENERG/Weap_mashinegun_energo_02_MESH.fbm.meta
+Assets/Models/Weapons/07 GRANAT/01 PHYS/weap_granat_phys_01_MESH.fbm.meta
+Assets/Models/Weapons/07 GRANAT/02 ENERGO/Weap_granat_energo_02_MESH.fbm.meta
+Assets/Models/Weapons/08 ROCKET LAUNCH/01 PHYS/Weap_rocket_phys_01_MESH.fbm.meta
+Assets/Models/torn_table/torn_table_mesh.fbm.meta
