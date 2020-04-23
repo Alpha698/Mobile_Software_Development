@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/5Lab.unity
     guid: 0599f1c1be21afe429c8a0b80191acf3
+  - enabled: 0
+    path: Assets/Scenes/6Lab.unity
+    guid: b975c0fe7512cc241bfb2f4402e81837
   m_configObjects: {}
