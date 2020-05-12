@@ -1,39 +1,60 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using System.Collections;
 public class ModuleKate : MonoBehaviour
 {
-    [Header ("Окна приложения")]
+    [Header("Окна приложения")]
     public GameObject inputPanel;
     public GameObject outputPanel;
+    public Button toActivity;
 
     [Header("Обьекты окна ввода")]
-    public InputField enterX;
-    public Button calculate;
+    public InputField enterA;
+    public InputField enterB;
+    public Button startBttn;
+    public GameObject popupInfo;
 
     [Header("Обьекты окна вывода")]
+    public GameObject panelResult;
     public TextMeshProUGUI textResult;
-    public Button backPanel;
-
-
 
     private void Start()
     {
-        calculate.onClick.AddListener(CalculateData);
-        backPanel.onClick.AddListener(OpenView);
+        //слушатели на кнопки
+        toActivity.onClick.AddListener(OpenView);
+        startBttn.onClick.AddListener(StartC);
     }
-
-    private void CalculateData()
+    void StartC()
     {
-        int x = int.Parse(enterX.text);
+        //открывает попап с таймером
+        StartCoroutine(ShowInfo());
     }
-
+    IEnumerator ShowInfo()
+    {
+        popupInfo.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        popupInfo.SetActive(false);
+    }
+    //метод открытия/закрытия окон
     private void OpenView()
     {
-        inputPanel.SetActive(true);
-        outputPanel.SetActive(false);
+        //тернарные выражение вместо if на 10 строк
+        outputPanel.SetActive(!outputPanel.activeSelf ? true : false);
+        inputPanel.SetActive(!inputPanel.activeSelf ? true : false);
+        //считаем функцию
+        if (outputPanel.activeSelf)
+            Calculate(int.Parse(enterA.text), int.Parse(enterB.text));
     }
+    //метод подсчета
+    private void Calculate(int a, int b)
+    {
+        //создание поля для текста в рантайме и запись в него значений
+        TextMeshProUGUI tempText = Instantiate(textResult);
+        tempText.text = "a = "+a+" b = "+b;
+        tempText.transform.SetParent(panelResult.transform,false);
+    }
+
 
     private void Update()
     {

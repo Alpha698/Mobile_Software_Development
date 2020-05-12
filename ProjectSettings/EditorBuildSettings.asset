@@ -23,7 +23,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/6Lab.unity
     guid: b975c0fe7512cc241bfb2f4402e81837
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/MapBoxSDK/Mapbox/Examples/0_PrefabScenes/Location-basedGame.unity
-    guid: 42f6aa7ce7a604f16ade319663f46ceb
+    path: Assets/Scenes/ModulKate.unity
+    guid: a87b53d51a4c3264b8197b80076de668
   m_configObjects: {}
